@@ -1,0 +1,126 @@
+
+sid,name,email,contactno,gender,branch,DOB
+pass
+
+create database hvpm;
+use hvpm;
+
+create table student (
+sid integer primary key auto_increment,
+name varchar(50),
+email varchar(50),
+contactno varchar(50),
+gender varchar(50),
+branch varchar(50),
+joindate varchar(50),
+DOB varchar(50));
+
+
+create table login (
+sid integer primary key auto_increment,
+userid varchar(50),
+pwd varchar(50),
+userrole varchar(50));
+
+
+
+create table loginadmin (
+sid integer primary key auto_increment,
+userid varchar(50),
+pwd varchar(50),
+userrole varchar(50));
+
+
+INSERT INTO loginadmin (userid, pwd,userrole)
+VALUES ('admin','1234','admin');
+
+name
+X
+XII
+poly
+sem1
+sem2
+sem3
+sem4
+sem5
+sem6
+sem7
+experience
+certification
+
+
+
+create table studentprofile (
+sid integer primary key auto_increment,
+name varchar(50),
+email varchar(50),
+X varchar(50),
+XII varchar(50),
+poly varchar(50),
+sem1 varchar(50),
+sem2 varchar(50),
+sem3 varchar(50),
+sem4 varchar(50),
+sem5 varchar(50),
+sem6 varchar(50),
+sem7 varchar(50),
+experience varchar(50),
+certification varchar(50));
+
+
+create table tpoadd (
+sid integer primary key auto_increment,
+name varchar(50),
+email varchar(50),
+contactno varchar(50),
+gender varchar(50),
+branch varchar(50),
+DOB varchar(50),
+userid varchar(50),
+pwd varchar(50),
+userrole varchar(50));
+
+
+create table headadd (
+sid integer primary key auto_increment,
+name varchar(50),
+email varchar(50),
+contactno varchar(50),
+gender varchar(50),
+branch varchar(50),
+DOB varchar(50),
+userid varchar(50),
+pwd varchar(50),
+userrole varchar(50));
+
+
+cname,email,contactno,website,caddress,discription
+
+create table companyadd (
+sid integer primary key auto_increment,
+cname varchar(50),
+email varchar(50),
+contactno varchar(50),
+website varchar(50),
+caddress varchar(300),
+discription varchar(300));
+
+cname,XI,XII,jobt,website,caddress,jobs,
+
+
+create table criteriaadd (
+sid integer primary key auto_increment,
+cname varchar(50),
+XI varchar(50),
+XII varchar(50),
+jobt varchar(50),
+website varchar(50),
+caddress varchar(300),
+jobs varchar(300));
+
+
+create table selectedstu (
+sid integer primary key auto_increment,
+name varchar(50),
+email varchar(50));
+
